@@ -13,7 +13,7 @@
   z-index: 10000;
   margin-top: 350px; 
   margin-left: 75px;
-  width:1100px;
+  width:80%;
   height: 110px;
   background-color: rgba(0,0,0,0.2);
   border: 1px solid #fff;
@@ -29,7 +29,7 @@
   font-size: 17px;
   background: #fff;
   border-radius: 7px;
-  margin: 25px 20px 40px 80px;
+  margin: 25px 15px 40px 80px;
 }
 
 .active {
@@ -58,7 +58,7 @@
     background-color: #fff;
     font-family: inherit;
     border-radius: 7px;
-    margin: 25px 40px 40px 80px;
+    margin: 25px 15px 40px 80px;
 }
 
 .dropdown-content {
@@ -124,4 +124,32 @@
     width: 100%;
     text-align: left;
   }
+}
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+/*@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}*/
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+     
+        width: 100%;
+    
 }
